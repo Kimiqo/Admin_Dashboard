@@ -7,7 +7,10 @@ body{
 
 .container{
     display: grid;
-    grid-template: 15vh 85vh / 20vw 80vw;
+    grid-template: 15vh 85vh / 17vw 83vw;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .header{
@@ -117,4 +120,53 @@ svg{
 .content{
     background-color: #e2e8f0;
     grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
 }
+
+
+.content h3{
+    margin-top: 30px;
+}
+
+.project{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    gap: 5px;
+    margin-left: 30px;
+}
+
+.project #card{
+    display: grid;
+    grid-template: repeat(3, 190px) / repeat(auto-fit, 300px);
+    gap: 30px;
+}
+
+#card p{
+    background-color: white;
+    border-left: 10px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+    width: 270px;
+    height: 165px;
+}
+
+.other{
+    margin-left: 30px;
+}
+
+.others p{
+    font-size: 10px;
+}
+
+#announce,
+#trend{
+    background-color: white;
+    width: 80%;
+    height: 235px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
